@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "mc-155104-fix",
   "version": "${version}",
-  "name": "",
-  "description": "",
+  "name": "MC-155104 fix",
+  "description": "fixes mouse warping on wayland in lwjgl versions before 1.14.4-pre1",
   "authors": [
     "tildejustin"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/modid",
-    "sources": "https://github.com/tildejustin/modid",
-    "issues": "https://github.com/tildejustin/modid/issues"
+    "homepage": "https://modrinth.com/mod/mc-155104-fix",
+    "sources": "https://github.com/tildejustin/mc-155104-fix",
+    "issues": "https://github.com/tildejustin/mc-155104-fix/issues"
   },
   "license": "MPL-2.0",
   "environment": "*",
   "mixins": [
-    "modid.mixins.json"
+    "mc-155104-fix.mixins.json"
   ],
   "depends": {
     "minecraft": "*",
