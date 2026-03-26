@@ -1,5 +1,6 @@
 plugins {
     alias libs.plugins.fabric.loom
+    alias libs.plugins.ploceus
     id "maven-publish"
 }
 
@@ -25,9 +26,13 @@ loom {
     }
 }
 
+ploceus {
+    setIntermediaryGeneration(2)
+}
+
 dependencies {
     minecraft libs.minecraft
-    mappings variantOf(libs.yarn.mappings) { classifier "v2" }
+    mappings ploceus.featherMappings(libs.versions.feather.build.get())
     modImplementation libs.fabric.loader
 }
 
